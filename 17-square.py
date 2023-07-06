@@ -1,9 +1,11 @@
 #tarea: utilizando for e if dibujar un cuadrado en la terminal
-for y in range(1,12):
-  line = ""  
-  for x in range(1,12):
-    if (x == y) or (x + y == 12):
-      line += "*"
-    else:
-      line += " "      
-  print(line)     
+  for row in range(12):
+    line = ""
+    for col in range(12):
+      if col == 0 or col == 11:
+        line += "*"
+      elif row == 0 or row == 11:
+        line += "*"
+      else:
+        line += " "
+    print(line)
